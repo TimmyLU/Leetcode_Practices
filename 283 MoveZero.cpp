@@ -5,16 +5,16 @@ using namespace std;
 class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
-        int left = 0;
+        int left = 0; // pointers
         int right = 0;
-        int n = nums.size();
-        for(;left < n;left++){
-            if(nums[left] != 0){
+        int n = nums.size(); // 抓長度
+        for(;left < n;left++){ //從頭掃到尾
+            if(nums[left] != 0){ // 非0 = 左=右----> 右++ // (0, 1, 0, 3, 12) -----> (1, 1, 0, 3, 12)
                 nums[right] = nums[left];
                 right ++;
             }
         }
-        for(;right < n;right++){
+        for(;right < n;right++){ // 跑一輪 非0都貼到左邊 -----> 把剩的改0
             nums[right] = 0;
         }
     }
