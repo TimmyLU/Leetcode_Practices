@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> // 雙層迴圈 O(n^2) 暴力算法
 #include <vector>
 
 using namespace std;
