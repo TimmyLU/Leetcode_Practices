@@ -5,7 +5,7 @@ using namespace std;
 class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
-        int left = 0; // 想成 pointers
+        int left = 0; //pointers
         int right = 0;
         int n = nums.size(); // 抓長度
         for(;left < n;left++){ //從頭掃到尾
