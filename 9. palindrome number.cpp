@@ -1,7 +1,7 @@
 class Solution{
 public:
     bool isPalindrome(int x){
-        if (x < 0 || (x % 10 == 0 && x != 0)){
+        if (x < 0 || (x % 10 == 0 && x != 0)){ //排除 < 0 的, 還有類似 '1000' 這種
             return false;
         }
         string s = to_string(x);
