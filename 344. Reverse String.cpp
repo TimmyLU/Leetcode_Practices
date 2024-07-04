@@ -1,4 +1,4 @@
-class Solution {
+class Solution { // reverse(s.begin(), s.end())
 public:
     void reverseString(vector<char>& s) {
         int left = 0;
