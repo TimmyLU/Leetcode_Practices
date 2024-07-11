@@ -21,7 +21,7 @@ public:
 };
 
 int main(){
-    Solution solution;
+    	Solution solution;
 	vector <int> nums = {0, 1, 0, 3, 12};
 	solution.moveZeroes(nums);
 	for(int num : nums){
