@@ -21,8 +21,9 @@ public:
 };
 
 int main(){
+    Solution solution;
 	vector <int> nums = {0, 1, 0, 3, 12};
-	moveZeros(nums);
+	solution.moveZeroes(nums);
 	for(int num : nums){
 		cout << num << " ";
 	}
