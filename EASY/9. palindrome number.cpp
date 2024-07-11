@@ -4,7 +4,7 @@ public:
         if (x < 0 || (x % 10 == 0 && x != 0)){ //排除 < 0 的, 還有類似 '1000' 這種
             return false;
         }
-        string s = to_string(x);
+        string s = to_string(x); // 轉成string
         int head = 0;
         int end = s.length() - 1;
         
