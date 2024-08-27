@@ -7,12 +7,10 @@ public:
         while(right > left){
             int area = (right - left) * min(height[left], height[right]);
             ans = max(ans, area);
-            //left++;
-            //right--;
             if(height[right] > height[left]){
                 left++;
             }else{
-                right--;
+                right--; // 如果左右相等也到else, 統一先right--;
             }
         }
         return ans;
