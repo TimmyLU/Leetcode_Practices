@@ -3,7 +3,8 @@ public:
     long long kthLargestLevelSum(TreeNode* root, int k) {
         queue<TreeNode*> que;
         priority_queue<long long, vector<long long>, greater<long long>> minheap;
-        if(root != nullptr) que.push(root);
+        //if(root != nullptr) que.push(root);
+        que.push(root);
         while(!que.empty()){
             int size = que.size();
             long long sum = 0;
